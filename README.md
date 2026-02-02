@@ -5,7 +5,7 @@
 
 This project performs an **end-to-end regression analysis** on a real-world dataset with a strong focus on **academically correct data preprocessing**. Special care is taken to handle outliers, feature scaling, and model evaluation in the right order to avoid data leakage and distorted results.
 
-## 🎯 Key Objectives
+##  Key Objectives
 
 - ✅ Understand dataset structure
 - ✅ Clean numerical features correctly
@@ -14,14 +14,14 @@ This project performs an **end-to-end regression analysis** on a real-world data
 - ✅ Train & evaluate regression models
 - ✅ Compare performance with standard metrics
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 
-## 📁 Structure
+##  Structure
 
 Regression-Analysis/
 ├── regression_analysis_watson_updated.ipynb
@@ -35,24 +35,13 @@ Regression-Analysis/
 
 ### 2️⃣ Feature Separation
 
-### 3️⃣ ⚠️ Outlier Handling
-✅ IQR on FEATURES ONLY
-✅ Target EXCLUDED
-✅ Single mask → Minimal data loss
-✅ BEFORE scaling
+### 3️⃣  Outlier Handling
+
+### 4️⃣  Scaling
 
 
-**❌ Avoided:**
-- Column-wise outlier removal
-- Target filtering
-- Scaling before outliers
 
-### 4️⃣ ⚖️ Scaling
-✅ StandardScaler
-✅ AFTER outlier removal
-
-
-## 🤖 Models
+##  Models
 
 | Model | Type |
 |-------|------|
@@ -61,7 +50,7 @@ Regression-Analysis/
 | Lasso | L1 Reg |
 | Random Forest | Ensemble |
 
-## 📈 Metrics
+##  Metrics
 
 | Metric | What it measures |
 |--------|------------------|
@@ -71,31 +60,25 @@ Regression-Analysis/
 
 ## 📊 Visuals
 
-- 🔍 Distributions (before/after)
-- 🌡️ Correlation heatmap
-- 📈 Actual vs Predicted
-- 📊 Residuals
+- Distributions (before/after)
+- Residuals
 
-## 🚀 Run It
+
 
 
 ## Collaborators
 
 Saniya Shaikh
+
 Shruti Bhandari
+
 Sakshi Manjrekar
 
+
+##  Run It
 
 ```bash
 git clone https://github.com/Statistics-and-Machine-Learning/Group_Exercise-2_Regression_Analysis_and_Feature_Selection.git
 cd Regression-Analysis
 jupyter notebook regression_analysis_watson_updated.ipynb
-🎓 Academic Standards
-✅ No data leakage
-✅ Proper outlier handling
-✅ Scaling after preprocessing
-✅ Comprehensive evaluation
-✅ Reproducible
-
-
-
+ Academic Standards
