@@ -81,4 +81,3 @@ Sakshi Manjrekar
 git clone https://github.com/Statistics-and-Machine-Learning/Group_Exercise-2_Regression_Analysis_and_Feature_Selection.git
 cd Regression-Analysis
 jupyter notebook regression_analysis_watson_updated.ipynb
- Academic Standards
