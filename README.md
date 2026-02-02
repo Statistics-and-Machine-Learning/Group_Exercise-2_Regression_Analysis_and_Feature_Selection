@@ -1,165 +1,101 @@
-Regression Analysis with Proper Outlier Handling
-📌 Project Overview
+# Regression Analysis with Proper Outlier Handling
+[![Jupyter](https://img.shields.io/badge/Jupyter-%23F37626.svg?&logo=Jupyter&logoColor=white)](https://jupyter.org/)
 
-This project performs an end-to-end regression analysis on a real-world dataset with a strong focus on academically correct data preprocessing.
-Special care is taken to handle outliers, feature scaling, and model evaluation in the right order to avoid data leakage and distorted results.
+## 📌 Project Overview
 
-The notebook demonstrates best practices expected in statistics, machine learning, and data science coursework.
+This project performs an **end-to-end regression analysis** on a real-world dataset with a strong focus on **academically correct data preprocessing**. Special care is taken to handle outliers, feature scaling, and model evaluation in the right order to avoid data leakage and distorted results.
 
-Key Objectives
+## 🎯 Key Objectives
 
-Understand the structure of the dataset
+- ✅ Understand dataset structure
+- ✅ Clean numerical features correctly
+- ✅ **Outlier removal** (features only, target excluded)
+- ✅ Scale features appropriately 
+- ✅ Train & evaluate regression models
+- ✅ Compare performance with standard metrics
 
-Clean and preprocess numerical features correctly
+## 🛠️ Tech Stack
 
-Apply outlier removal without affecting the target variable
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 
-Scale features appropriately
+## 📁 Structure
 
-Train and evaluate regression models
-
-Compare model performance using standard metrics
-
-
-Technologies Used
-
-Python
-
-Pandas, NumPy
-
-Matplotlib, Seaborn
-
-Scikit-learn
-
-Jupyter Notebook
-
-
-Project Structure
-
-📁 Regression-Analysis
-│
+Regression-Analysis/
 ├── regression_analysis_watson_updated.ipynb
-├── README.md
-└── requirements.txt (optional)
+├── README.md 
+└── requirements.txt 
 
 
-Data Preprocessing Steps
-1️⃣ Data Exploration
+## 🔄 Preprocessing Pipeline
 
-Dataset shape and structure
+### 1️⃣ Data Exploration
 
-Missing value analysis
+### 2️⃣ Feature Separation
 
-Basic statistical summary
+### 3️⃣ ⚠️ Outlier Handling
+✅ IQR on FEATURES ONLY
+✅ Target EXCLUDED
+✅ Single mask → Minimal data loss
+✅ BEFORE scaling
 
-2️⃣ Feature Selection
 
-Separation of:
+**❌ Avoided:**
+- Column-wise outlier removal
+- Target filtering
+- Scaling before outliers
 
-Numerical features
+### 4️⃣ ⚖️ Scaling
+✅ StandardScaler
+✅ AFTER outlier removal
 
-Target variable (sold_count)
 
+## 🤖 Models
 
+| Model | Type |
+|-------|------|
+| Linear Regression | Baseline |
+| Ridge | L2 Reg |
+| Lasso | L1 Reg |
+| Random Forest | Ensemble |
 
-⚠️ Outlier Handling 
+## 📈 Metrics
 
+| Metric | What it measures |
+|--------|------------------|
+| **R²** | Explained variance |
+| **MAE** | Avg absolute error |
+| **RMSE** | Error in original units |
 
-Outliers are removed only from feature columns
+## 📊 Visuals
 
-Target variable is explicitly excluded
+- 🔍 Distributions (before/after)
+- 🌡️ Correlation heatmap
+- 📈 Actual vs Predicted
+- 📊 Residuals
 
-IQR method is applied once using a combined mask
-→ prevents aggressive row deletion
+## 🚀 Run It
 
 
-
-
-❌ What Was Avoided
-
-Removing outliers column-by-column
-
-Filtering the target variable
-
-Scaling before outlier removal
-
-This ensures:
-✔ academic correctness
-✔ minimal data loss
-✔ unbiased model training
-
-
-
-⚖️ Feature Scaling
-
-Standardization applied after outlier removal
-
-Ensures fair contribution of features during model training
-
-🤖 Models Implemented
-
-Linear Regression
-
-(Optional if present) Ridge / Lasso / Random Forest
-
-
-📈 Model Evaluation Metrics
-
-R² Score
-
-Mean Absolute Error (MAE)
-
-Mean Squared Error (MSE)
-
-Root Mean Squared Error (RMSE)
-
-Results are compared to understand model performance and generalization.
-
-
-📊 Visualizations
-
-Feature distributions (before & after preprocessing)
-
-Correlation heatmap
-
-Actual vs Predicted values
-
-🚀 How to Run the Project
-
-Clone the repository:
-
-git clone <https://github.com/Statistics-and-Machine-Learning/Group_Exercise-2_Regression_Analysis_and_Feature_Selection>
-
-
-Navigate to the project folder:
-
-cd Regression-Analysis
-
-
-Open the notebook:
-
-jupyter notebook
-
-
-Run all cells in:
-
-regression_analysis_watson_updated.ipynb
-
-🎓 Academic Note
-
-This project follows proper machine learning workflow standards, making it suitable for:
-
-University assignments
-
-Portfolio projects
-
-GitHub showcase
-
-Interview discussion
-
-
-Collaborators
+## Collaborators
 
 Saniya Shaikh
 Shruti Bhandari
 Sakshi Manjrekar
+
+
+```bash
+git clone https://github.com/Statistics-and-Machine-Learning/Group_Exercise-2_Regression_Analysis_and_Feature_Selection.git
+cd Regression-Analysis
+jupyter notebook regression_analysis_watson_updated.ipynb
+🎓 Academic Standards
+✅ No data leakage
+✅ Proper outlier handling
+✅ Scaling after preprocessing
+✅ Comprehensive evaluation
+✅ Reproducible
+
+
+
